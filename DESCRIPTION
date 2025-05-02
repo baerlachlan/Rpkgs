@@ -1,23 +1,24 @@
 Package: Rpkgs
 Title:A package to install my commonly used packages
 Version: 0.1.0
-Authors@R: 
+Authors@R:
     person(
         given = "Lachlan", family = "Baer",
         role = c("aut", "cre"),
         email = "baerlachlan@gmail.com",
         comment = c(ORCID = "0000-0001-5213-3401")
     )
-Description: A meta package that, when installed, installs the packages listed 
+Description: A meta package that, when installed, installs the packages listed
     as dependencies in the DESCRIPTION file. Useful when upgrading between R
     versions, or for a fresh install.
 Encoding: UTF-8
 biocViews:
-Depends: 
-    R (>= 4.4)
+Depends:
+    R (>= 4.5)
 Imports:
     AnnotationHub,
     BiocCheck,
+    ComplexHeatmap,
     cqn,
     DT,
     edgeR,
@@ -38,7 +39,9 @@ Imports:
     ngsReports,
     pander,
     pheatmap,
+    plyranges,
     RColorBrewer,
+    reactable,
     scales,
     shiny,
     shinydashboard,
